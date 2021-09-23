@@ -76,5 +76,18 @@ public class DAOUsuarios {
      }  
      
      }  
+         public boolean eliminarUsuarios(int idusuarios){
+                   
+         try{
+             return con.eliminar(nombreTabla, idusuarios);
+         
+       
+        } catch(Exception ex){
+         System.out.println("Error en DAOusuarios.eliminarUsuarios: " + ex.getMessage());
+        return false;
+     
+     }  
+     
+     }  
 	
 }
