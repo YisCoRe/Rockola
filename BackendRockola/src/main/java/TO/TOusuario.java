@@ -46,8 +46,6 @@ public class TOusuario {
 		this.nombres = nombres;
 		this.apellidos = apellidos;
 		this.identificacion = identificacion;
-		this.direccion = direccion;
-		this.telefono = telefono;
 		this.correo = correo;
 		this.genero = genero;
 		this.fecha = fecha;
