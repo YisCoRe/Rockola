@@ -9,6 +9,6 @@ public class DAOUsuarios {
 	private ConexionDB con = new ConexionDB();
 	private String nombreTabla = "Usuarios";
 	
-	private ArrayList usuario = new ArrayList();
+	private ArrayList usuario = new ArrayList()        ;
 	
 }
