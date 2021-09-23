@@ -78,7 +78,7 @@ public class ConexionDB {
         }
     }
 
-    public int isertar(String nombreTabla, String[] columnas, String[] valores) {
+    public int insertar(String nombreTabla, String[] columnas, String[] valores) {
         StringBuilder query = new StringBuilder("INSERT INTO ");
         query.append(nombreTabla);
         query.append("(");
@@ -166,4 +166,5 @@ public class ConexionDB {
         }
 
     }
-}
+
+   }
