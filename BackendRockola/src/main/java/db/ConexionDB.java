@@ -89,6 +89,7 @@ public class ConexionDB {
                 query.append(",");
             }
         }
+        
         query.append(") VALUES (");
         for (int i = 0; i < columnas.length; i++) {
             query.append(valores[i]);
