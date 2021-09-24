@@ -25,11 +25,11 @@ public class DAOUsuarios {
              tousuarios.setApellidos(rs.getString("apellidos"));
              tousuarios.setClave(rs.getString("clave"));
              tousuarios.setDireccion(rs.getString("direccion"));
-             tousuarios.setFecha(rs.getDate("fecha"));
+             tousuarios.setFecha(rs.getDate("fechaNacimiento"));
              tousuarios.setGenero(rs.getString("genero"));
              tousuarios.setCorreo(rs.getString("correo"));
              tousuarios.setIdUsuarios(rs.getInt("idusuarios"));
-             tousuarios.setIdentificacion(rs.getString("indentificacion"));
+             tousuarios.setIdentificacion(rs.getString("identificacion"));
              tousuarios.setNombres(rs.getString("nombres"));
              tousuarios.setTelefono(rs.getString("telefono"));
              tousuarios.setTipoUsuario(rs.getString("tipoUsuario"));
