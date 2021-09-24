@@ -38,6 +38,7 @@ public class TOusuario {
 	
 	public TOusuario(int idUsuarios, String usuario, String clave, String tipoUsuario, String nombres, String apellidos,
 			String identificacion, String correo, String genero, Date fecha) {
+		
 		super();
 		this.idUsuarios = idUsuarios;
 		this.usuario = usuario;
@@ -56,6 +57,7 @@ public class TOusuario {
     }
 	
 	//Getters y Setters
+	
 	public int getIdUsuarios() {
 		return idUsuarios;
 	}
