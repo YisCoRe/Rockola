@@ -166,5 +166,23 @@ public class ConexionDB {
         }
 
     }
+    
+    public boolean eliminar(String nombreTabla, int id) {
+        String query = "DELETE FROM " + nombreTabla + " WHERE id" + nombreTabla + " = " + id;
+        try {
+            stmt = con.createStatement();
+            return stmt.execute(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(ConexionDB.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        } catch (RuntimeException ex) {
+            Logger.getLogger(ConexionDB.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        } catch (Exception ex) {
+            Logger.getLogger(ConexionDB.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+
+    }
 
    }
