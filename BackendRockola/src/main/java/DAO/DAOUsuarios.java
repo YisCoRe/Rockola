@@ -35,15 +35,13 @@ public class DAOUsuarios {
              tousuarios.setTipoUsuario(rs.getString("tipoUsuario"));
              tousuarios.setUsuario(rs.getString("usuario"));
              
-              usuario.add(tousuarios);       
-                 
-             
+             usuario.add(tousuarios);                   
          }
          return usuario;
+		 
         } catch(SQLException ex){
          System.out.println("Error en DAOusuarios.consultarUsuarios: " + ex.getMessage());
-         return null;
-     
+         return null;     
      }  
      
      }   
@@ -73,20 +71,18 @@ public class DAOUsuarios {
          System.out.println("Error en DAOusuarios.actualizarUsuarios: " + ex.getMessage());
         return false;
      
+     }       
      }  
-     
-     }  
+	
          public boolean eliminarUsuarios(int idusuarios){
                    
          try{
              return con.eliminar(nombreTabla, idusuarios);
-         
-       
+		 
         } catch(Exception ex){
          System.out.println("Error en DAOusuarios.eliminarUsuarios: " + ex.getMessage());
         return false;
-     
-     }  
+	}  
      
      }  
 	
