@@ -1,7 +1,7 @@
 <%@page import="com.google.gson.Gson"%>
 <%@page import="TO.TOusuario"%>
-<%@page import="java.util.ArrayLits"%>
-<%@page import="controllers.CtrlUsuarios"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="controller.CtrlUsuarios"%>
 
 <% CtrlUsuarios usuariosCtrl = new CtrlUsuarios();
 String Opcion = request.getParameter("Opcion");
