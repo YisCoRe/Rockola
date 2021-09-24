@@ -3,14 +3,15 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="controller.CtrlUsuarios"%>
 
-<% CtrlUsuarios usuariosCtrl = new CtrlUsuarios();
+<%
+CtrlUsuarios usuariosCtrl = new CtrlUsuarios();
 String Opcion = request.getParameter("Opcion");
-if("listar".equals(Opcion)){
-ArrayList<TOusuario> usuarios = usuariosCtrl.consultarUsuarios();
-out.print(new Gson().toJson(usuarios));
+if ("listar".equals(Opcion)) {
+	ArrayList<TOusuario> usuarios = usuariosCtrl.consultarUsuarios();
+	out.print(new Gson().toJson(usuarios));
 
-}else{
-out.print("Opcion no valida");
+} else {
+	out.print("Opcion no valida");
 
 }
 %>
