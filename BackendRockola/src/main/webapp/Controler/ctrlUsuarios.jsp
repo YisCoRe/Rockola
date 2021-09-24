@@ -7,10 +7,10 @@
 String Opcion = request.getParameter("Opcion");
 if("listar".equals(Opcion)){
 ArrayList<TOusuario> usuarios = usuariosCtrl.consultarUsuarios();
-out.print(new Gson().toJson(usuarios))
+out.print(new Gson().toJson(usuarios));
 
 }else{
-out.print("Opcion no valida")
+out.print("Opcion no valida");
 
 }
 %>
